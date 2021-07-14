@@ -39,3 +39,19 @@ body {
     right: 0;
 }
 
+.topLimit {
+    height: 15px;
+    position: relative;
+    bottom: 15px;
+}
+
+.bottomLimit {
+    height: 15px;
+    position: relative;
+    top: 501px;
+}
+
+.scoreBoard {
+    position: relative;
+    right: 25px;
+}
