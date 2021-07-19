@@ -122,6 +122,19 @@ function update() {
         ballXVelocity = right;
     }
 
+    if (ballXPosition === computerPaddleYPosition) {
+        console.log('Points connected at: ', ballXPosition, ' ', computerPaddleYPosition);
+    }
+
+    if (ballXPosition === PADDLE_WIDTH) {
+        console.log('PADDLE AND BALL CONNECT')
+    }
+
+    // Computer Paddle collision
+    // if (ballYPosition > computerPaddleYPosition + PADDLE_HEIGHT && ballXPosition  PADDLE_WIDTH) {
+    //     ballXVelocity = left;
+    // }
+
     // Controls for User Paddle
     if (upArrow === true) {
         userPaddleYVelocity = up;
